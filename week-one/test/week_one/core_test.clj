@@ -7,6 +7,8 @@
   (testing "FIXME, I fail."
     (is (= 1 1))))
 
+; day one problems 
+
 (deftest prob-one
   (testing "problem #1."
     (is (= true true))))
@@ -101,3 +103,5 @@
   (testing "problem #12.C"
     (is
      (= 3 (last (list 1 2 3))))))
+
+; day two problems
