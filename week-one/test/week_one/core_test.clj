@@ -105,3 +105,9 @@
      (= 3 (last (list 1 2 3))))))
 
 ; day two problems
+
+(deftest thirteen
+  (testing "problem #13"
+    (is
+     (= '(20 30 40) (rest
+                     [10 20 30 40])))))
