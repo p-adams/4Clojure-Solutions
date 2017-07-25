@@ -111,3 +111,27 @@
     (is
      (= '(20 30 40) (rest
                      [10 20 30 40])))))
+
+(deftest fourteen-a
+  (testing "problem #14.1"
+    (is
+     (= 8
+        ((fn add-five [x] (+ x 5)) 3)))))
+
+(deftest fourteen-b
+  (testing "problem #14.b"
+    (is
+     (= 8
+        ((fn [x] (+ x 5)) 3)))))
+
+(deftest fourteen-c
+  (testing "problem #14.c"
+    (is
+     (= 8
+        (#(+ % 5) 3)))))
+
+(deftest fourteen-d
+  (testing "problem #14.d"
+    (is
+     (= 8
+        ((partial + 5) 3)))))
