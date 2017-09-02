@@ -135,3 +135,11 @@
     (is
      (= 8
         ((partial + 5) 3)))))
+
+(deftest fifteen-a
+  (testing "problem #15.a"
+  (is
+    (=
+      (#(* % %) 2) 4))))
+
+
